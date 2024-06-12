@@ -1,3 +1,5 @@
+@import "../styles/clash-grotesk.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,10 +10,19 @@ body {
   padding: 0;
   box-sizing: border-box;
   /* @apply bg-gradient-to-r from-black to-gray-900 text-white; */
+  background-color: black;
 }
+
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  .clash-grotesk {
+    font-family: "ClashGrotesk-Variable", sans-serif;
   }
 }

@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^3.1.0",
+    "@splinetool/runtime": "^1.6.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.10",
     "next": "14.2.3",
