@@ -11,6 +11,7 @@ body {
   box-sizing: border-box;
   /* @apply bg-gradient-to-r from-black to-gray-900 text-white; */
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -26,7 +27,11 @@ body {
 }
 
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #49459bbf 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(188, 165, 255, 0) 0%,
+    #49459bbf 100%
+  );
   /* background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%); */
   filter: blur(123px);
 }

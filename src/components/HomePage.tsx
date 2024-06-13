@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Spline from "@splinetool/react-spline";
 import { Suspense } from "react";
@@ -13,7 +14,7 @@ const HomePage = () => {
     >
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
-        fill="white"
+        fill="#7B93FE"
       />
       <div className="p-4">
         <div className="mb-6">
@@ -55,7 +56,6 @@ const HomePage = () => {
           >
             Learn More
           </Link>
-          
         </div>
       </div>
       <div
