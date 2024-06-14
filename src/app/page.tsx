@@ -1,4 +1,6 @@
 "use client";
+import AboutPage from "@/components/AboutPage";
+import BlogsPage from "@/components/BlogsPage";
 import HomePage from "@/components/HomePage";
 import { Macbook } from "@/components/Macbook";
 import ProjectsPage from "@/components/ProjectsPage";
@@ -20,6 +22,13 @@ export default function Home() {
         <div id="projects">
           <ProjectsPage />
         </div>
+
+
+        {/* About */}
+        <AboutPage />
+
+        {/* blogs */}
+        {/* <BlogsPage /> */}
       </main>
     </>
   );

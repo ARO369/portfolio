@@ -4,7 +4,6 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Link from "next/link";
-// import gdsc_thumbnail from "../../public/assets/gdsc_thumbnail.png";
 
 interface ProjectCardProps {
   title: string;
@@ -71,7 +70,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               target="__blank"
               className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
             >
-              <Link href={github}>GitHub →</Link>
+              GitHub →
             </CardItem>
           )}
           {live && (
