@@ -72,6 +72,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors, addSvgPatterns],
+  plugins: [addVariablesForColors, addSvgPatterns, require('tailwind-scrollbar'),],
 };
 export default config;

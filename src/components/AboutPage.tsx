@@ -15,31 +15,44 @@ import cppLogo from "../../public/assets/cpp.png";
 import htmlLogo from "../../public/assets/html.png";
 import cssLogo from "../../public/assets/css.png";
 import Link from "next/link";
+import Image from "next/image";
+import art from "../../public/assets/art.jpg";
+import art3 from "../../public/assets/art-3.png";
+import art4 from "../../public/assets/art-4.jpg";
+import art6 from "../../public/assets/art-6.png";
+import art7 from "../../public/assets/art-7.jpg";
+import blog1 from "../../public/assets/blog1.png";
+import blog2 from "../../public/assets/blog2.png";
+import Blog3 from "../../public/assets/Blog3.png";
+import { BlogsCards } from "./BlogsCards";
+import { ServiceCards } from "./ServiceCards";
 
 const AboutPage = () => {
   return (
     <>
-      <div
-        className="relative min-h-screen w-full flex flex-col justify-center items-center"
-        id="about"
-      >
+      <div className="w-full flex justify-center items-center mt-28" id="about">
+        <Image src={art4} alt="about" width={1000} />
+      </div>
+
+      <div className="relative min-h-screen w-full flex flex-col justify-center items-center">
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 left-0 blue__gradient" />
         <div className="absolute z-[0] w-[40%] h-[35%] bottom-0 right-0 blue__gradient" />
         <br />
         <br />
         <br />
-        <div className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold mt-8">
+        <div className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold">
           🌌 About 🦄
         </div>
         <br />
         <br />
         <div className="w-[90%] sm:w-[80%] md:w-[80%] xl:w-[60%] my-14 text-2xl z-10">
-          Hello, folks! I'm a Full-Stack Developer with a passion for the MERN
-          stack. JavaScript is at the heart of my work, and I've spent the last
-          three years diving deep into web development, creating projects I'm
-          really proud of. Freelancing has also been a big part of my journey,
-          giving me the chance to work with various clients and learn from each
-          experience.
+          Hello, folks! I'm a{" "}
+          <span className="text-green-300">Full-Stack Web Developer</span> with
+          a passion for the MERN stack. JavaScript is at the heart of my work,
+          and I've spent the last three years diving deep into web development,
+          creating projects I'm really proud of. Freelancing has also been a big
+          part of my journey, giving me the chance to work with various clients
+          and learn from each experience.
           <br />
           <br />
           <br />
@@ -67,8 +80,10 @@ const AboutPage = () => {
               ✨ Aaradhya D. Pathak
             </span>
             <br />
-            <br /> <span className="font-bold text-purple-300">Currently:</span>
-             {" "}Final Year Engineering Student <br />
+            <br /> <span className="font-bold text-purple-300">
+              Currently:
+            </span>{" "}
+            Final Year Engineering Student <br />
             <br />
             <span className="font-bold text-purple-300">Branch:</span> Computer
             Science Engineering <br />
@@ -77,16 +92,24 @@ const AboutPage = () => {
             Ram Meghe Institute of Technology and Research
             <br />
             <br />
-            <span className="font-bold text-purple-300">Graduation Year:</span>
-            {" "}2025
+            <span className="font-bold text-purple-300">
+              Graduation Year:
+            </span>{" "}
+            2025
             <br />
             <br />
-            <span className="font-bold text-purple-300">Address:</span>
-            {" "}Amravati, Maharashtra, India
+            <span className="font-bold text-purple-300">Address:</span>{" "}
+            Amravati, Maharashtra, India
             <br />
             <br />
             <br />
             <br />
+            <div
+              className="w-full flex justify-center items-center my-28"
+              id="about"
+            >
+              <Image src={art6} alt="about" width={1000} />
+            </div>
             <span className="font-bold text-green-300">
               🎗️ As a student of computer science, I specialize in:
             </span>
@@ -121,14 +144,83 @@ const AboutPage = () => {
           <br />
           <br />
           <br />
-          🙌 So, come on, let's connect and share a few laughs while we navigate
-          the tech world together!
+          🙌 So, let's connect and share a few laughs while we navigate the tech
+          world together!
           <br />
           <br />
           ➡️ I am looking for opportunities in the fields of web development and
           software development.
           <br />
         </div>
+      </div>
+
+      <div className="w-full flex justify-center items-center my-28" id="about">
+        <Image src={art7} alt="about" width={1000} />
+      </div>
+
+      {/* Blogs */}
+      <div
+        className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold"
+        id="blogs"
+      >
+        🌌 Blogs 🦄
+      </div>
+      <div className="relative w-full min-h-full flex flex-wrap justify-center mb-20">
+        <BlogsCards
+          title="Starting Out on My Full Stack Development Journey 🚀"
+          description="In this Blog I cover how I started Full Stack Development Journey"
+          thumbnail={blog1}
+          url="https://medium.com/@aaradhyablogs/starting-out-on-my-full-stack-development-journey-c42af9731779"
+        />
+        <BlogsCards
+          title="Comprehensive Guide to Responsive Websites — Aaradhya Pathak"
+          description="I'm sharing some of the best practices for creating modern, responsive websites."
+          thumbnail={blog2}
+          url="https://medium.com/@aaradhyablogs/comprehensive-guide-to-responsive-websites-aaradhya-pathak-1a78dabc9730"
+        />
+        <BlogsCards
+          title="Precision in Code: A Comprehensive Guide to Naming Conventions"
+          description="I am sharing some naming conventions that are used by big tech companies."
+          thumbnail={Blog3}
+          url="https://medium.com/@aaradhyablogs/precision-in-code-a-comprehensive-guide-to-naming-conventions-f6de29984e67"
+        />
+        <div className="absolute z-[0] w-[40%] h-[35%] top-0 left-0 blue__gradient" />
+        <div className="absolute z-[0] w-[40%] h-[35%] bottom-0 right-0 blue__gradient" />
+      </div>
+
+      <div className="w-full flex justify-center items-center my-28" id="about">
+        <Image src={art3} alt="about" width={1000} />
+      </div>
+      <div
+        className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold"
+        id="services"
+      >
+        🌌 Services 🦄
+      </div>
+      <div className="relative flex justify-center w-full my-8">
+        <div className="flex flex-wrap justify-around items-center xl:w-[70%] sm:w-[90%]">
+          <ServiceCards
+            title="Frontend Development"
+            description="Creating stellar user interfaces and web experiences using the latest technologies."
+            emoji="💻"
+          />
+          <ServiceCards
+            title="Backend Development"
+            description="Developing robust, scalable server-side logic for a wide range of web applications."
+            emoji="📡"
+          />
+          <ServiceCards
+            title="Responsive Design"
+            description="Designing websites that look and perform equally well on all devices and screen sizes."
+            emoji="📲"
+          />
+        </div>
+        <div className="absolute z-[0] w-[40%] h-[35%] top-0 left-0 blue__gradient" />
+        <div className="absolute z-[0] w-[40%] h-[35%] bottom-0 right-0 blue__gradient" />
+      </div>
+
+      <div className="w-full flex justify-center items-center my-28" id="about">
+        <Image src={art} alt="about" width={1000} />
       </div>
     </>
   );

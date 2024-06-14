@@ -114,7 +114,7 @@ const ProjectsPage = () => {
       </div>
       <div className="absolute z-[0] w-[40%] h-[35%] top-0 left-0 blue__gradient" />
       <div className="absolute z-[0] w-[40%] h-[35%] bottom-0 right-0 blue__gradient" />
-      <div className="flex flex-wrap justify-center mt-20">
+      <div className="flex flex-wrap justify-center items-center mt-20">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
