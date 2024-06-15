@@ -12,6 +12,7 @@ import movieHub_thmbnail from "../../public/assets/movieHub_thmbnail.png";
 import portfolio_thumbnail from "../../public/assets/portfolio_thumbnail.png";
 import technews_thumbnail from "../../public/assets/technews_thumbnail.png";
 import youtube_thumbnail from "../../public/assets/youtube_thumbnail.png";
+import gpa_thumbnail from "../../public/assets/gpa_thumbnail.png";
 
 const projects = [
   {
@@ -84,7 +85,7 @@ const projects = [
     description:
       "Created the official website for Google Developer Student Clubs to foster a community of learning and collaboration, providing resources, event updates, and membership information.",
     github: "https://github.com/ARO369/GDSC-AaradhyaPathak",
-    live: "https://aaradhyapathak.netlify.app/",
+    live: "https://arogdsc.netlify.app/",
   },
   {
     title: "MoviesHub 🍿",
@@ -103,6 +104,15 @@ const projects = [
       "Designed and developed a responsive gym website for a freelance client, providing information about services, facilities, and membership options to attract potential customers.",
     github: "",
     live: "https://aroprojects.000webhostapp.com/gymwebsite/",
+  },
+  {
+    title: "GPA Calculator",
+    thumbnail: gpa_thumbnail,
+    techStack: ["HTML", "CSS"],
+    description:
+      "GPA Calculator is my first project. It uses by 3000+ engineering students. It contains all 8 engineering semesters calculator according to credit-grade system.",
+    github: "",
+    live: "https://aroprojects.000webhostapp.com/gpacalculator/",
   },
 ];
 

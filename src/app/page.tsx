@@ -1,6 +1,7 @@
 "use client";
 import AboutPage from "@/components/AboutPage";
-import BlogsPage from "@/components/BlogsPage";
+import ContactPage from "@/components/ContactPage";
+import { Footer } from "@/components/Footer";
 import HomePage from "@/components/HomePage";
 import { Macbook } from "@/components/Macbook";
 import ProjectsPage from "@/components/ProjectsPage";
@@ -26,8 +27,11 @@ export default function Home() {
         {/* About */}
         <AboutPage />
 
-        {/* blogs */}
-        {/* <BlogsPage /> */}
+        {/* Contact Page */}
+        <ContactPage />
+
+        {/* Footer */}
+        <Footer />
       </main>
     </>
   );

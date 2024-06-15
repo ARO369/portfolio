@@ -41,6 +41,8 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
+
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -72,6 +74,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors, addSvgPatterns, require('tailwind-scrollbar'),],
+  plugins: [addVariablesForColors, addSvgPatterns, require('tailwind-scrollbar')],
 };
 export default config;

@@ -18,8 +18,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="dark scrollbar scrollbar-track-slate-950 scrollbar-thumb-purple-600"
+      className="dark sm:scrollbar scrollbar-track-slate-950 scrollbar-thumb-purple-600 scrollbar-none"
     >
+      <head>
+        <link rel="icon" href="./favicon.ico" sizes="any" />
+      </head>
       <body className={inter.className}>
         <div className="relative w-full flex items-center justify-center">
           <Navbar />
