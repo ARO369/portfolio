@@ -165,7 +165,7 @@ export const Lid = ({
           src={mac1}
           alt="aaradhya's github"
           fill
-          className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
+          className="object-contain object-left-top absolute rounded-lg inset-0 h-full w-full"
         />
       </motion.div>
     </div>

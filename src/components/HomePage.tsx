@@ -2,7 +2,6 @@
 import React from "react";
 import Spline from "@splinetool/react-spline";
 import { Suspense } from "react";
-import "@/styles/Home.module.css";
 import { Spotlight } from "./ui/Spotlight";
 import Link from "next/link";
 
