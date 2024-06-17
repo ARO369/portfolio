@@ -22,7 +22,7 @@ const projects = [
     description:
       "A personal portfolio showcasing my projects and skills, providing an interactive platform for visitors to learn about my experience and expertise.",
     github: "https://github.com/ARO369/portfolio",
-    live: "",
+    live: "https://aaradhyapathak.vercel.app/",
   },
   {
     title: "Internship: CRM Webapp 🎯",
@@ -106,7 +106,7 @@ const projects = [
     live: "https://aroprojects.000webhostapp.com/gymwebsite/",
   },
   {
-    title: "GPA Calculator",
+    title: "GPA Calculator 🧮",
     thumbnail: gpa_thumbnail,
     techStack: ["HTML", "CSS"],
     description:

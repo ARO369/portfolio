@@ -13,7 +13,10 @@ const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("fixed top-10 sm:inset-x-0 sm:max-w-xl sm:mx-auto z-50", className)}
+      className={cn(
+        "fixed top-10 sm:inset-x-0 sm:max-w-xl sm:mx-auto z-50",
+        className
+      )}
     >
       <Menu setActive={setActive}>
         <Link href={"#home"}>
@@ -26,7 +29,9 @@ const Navbar = ({ className }: { className?: string }) => {
         <Link href={"#projects"}>
           <MenuItem setActive={setActive} active={active} item="Projects">
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="#Portfolio">Portfolio</HoveredLink>
+              <HoveredLink href="https://aaradhyapathak.vercel.app/">
+                Portfolio
+              </HoveredLink>
               <HoveredLink href="https://arocrmsoftware.netlify.app/">
                 CRM Web App
               </HoveredLink>
