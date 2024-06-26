@@ -16,7 +16,7 @@ export function TechStackButton({ title, logo }: tech) {
         as="button"
         className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-3"
       >
-        <Image src={logo} alt={title} width={40} />
+        <Image src={logo} alt={title} width={40} loading="lazy"/>
         <span>{title}</span>
       </HoverBorderGradient>
     </div>

@@ -10,8 +10,8 @@ interface ProjectCardProps {
   thumbnail: StaticImageData;
   techStack: string[];
   description: string;
-  github: string;
-  live: string;
+  github?: string;
+  live?: string;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -39,6 +39,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             width="1000"
             className="h-60 w-full object-contain rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
+            loading="lazy"
           />
         </CardItem>
 

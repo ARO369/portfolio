@@ -25,7 +25,7 @@ export function BlogsCards({ title, url, description, thumbnail }: blogs) {
           <div className="text-base !p-0 font-normal mt-2 mb-6">
             <span className="text-slate-500 ">{description}</span>
           </div>
-          <Image src={thumbnail} alt={title} />
+          <Image src={thumbnail} alt={title} loading="lazy"/>
         </Link>
       </PinContainer>
     </div>

@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { Spotlight } from "./ui/Spotlight";
 import Link from "next/link";
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   return (
     <section
       id="home"
@@ -62,7 +62,9 @@ const HomePage = () => {
         data-scroll-speed="-.01"
         className="mt-14 mx-4 xl:mt-0 canvas-container border border-[#413d3d] rounded-3xl h-[515px] xl:w-[690px] xl:min-w-[690px] overflow-hidden cursor-grabbing"
       >
-        <Suspense fallback={<span>Loading...</span>}>
+        <Suspense
+          fallback={<span className="text-white text-center">Loading...</span>}
+        >
           <Spline scene="/assets/scene.splinecode" />
         </Suspense>
       </div>

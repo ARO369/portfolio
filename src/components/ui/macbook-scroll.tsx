@@ -24,7 +24,7 @@ import { IconCommand } from "@tabler/icons-react";
 import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 import Image from "next/image";
-import mac1 from "../../../public/assets/mac1.png";
+import mac1 from "../../../public/assets/mac1.webp";
 
 export const MacbookScroll = ({
   src,
@@ -166,6 +166,7 @@ export const Lid = ({
           alt="aaradhya's github"
           fill
           className="object-contain object-left-top absolute rounded-lg inset-0 h-full w-full"
+          loading="lazy"
         />
       </motion.div>
     </div>

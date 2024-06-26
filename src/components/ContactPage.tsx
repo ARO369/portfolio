@@ -4,7 +4,7 @@ import instagramLogo from "../../public/assets/instagram_logo.png";
 import xLogo from "../../public/assets/x_logo.png";
 import gmailLogo from "../../public/assets/gmail_logo.png";
 import callLogo from "../../public/assets/call_logo.png";
-import art5 from "../../public/assets/art-5.jpg";
+import art5 from "../../public/assets/art-5.webp";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,19 +12,20 @@ const ContactPage = () => {
   return (
     <div className="relative">
       <div
-        className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold"
+        className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold pt-32"
         id="contact"
       >
         🌌 Contact 🦄
       </div>
 
-      <div className="flex justify-center gap-14 mt-24">
+      <div className="flex justify-center gap-14 mt-16">
         <Link href="https://www.linkedin.com/in/aaradhyapathak/">
           <Image
             src={linkedinLogo}
             alt="Linkedin"
             width={50}
             style={{ objectFit: "contain", cursor: "pointer" }}
+            loading="lazy"
           />
         </Link>
 
@@ -34,6 +35,7 @@ const ContactPage = () => {
             alt="instagram"
             width={50}
             style={{ objectFit: "contain", cursor: "pointer" }}
+            loading="lazy"
           />
         </Link>
         <Link href="https://x.com/AaradhyaPathak6">
@@ -42,6 +44,7 @@ const ContactPage = () => {
             alt="x"
             width={50}
             style={{ objectFit: "contain", cursor: "pointer" }}
+            loading="lazy"
           />
         </Link>
       </div>
@@ -59,6 +62,7 @@ const ContactPage = () => {
             alt="Email Address"
             width={50}
             style={{ objectFit: "contain", cursor: "pointer" }}
+            loading="lazy"
           />
         </Link>
         <Link href="tel:+91 1234567890">
@@ -67,6 +71,7 @@ const ContactPage = () => {
             alt="call"
             width={50}
             style={{ objectFit: "contain", cursor: "pointer" }}
+            loading="lazy"
           />
         </Link>
       </div>
@@ -79,7 +84,13 @@ const ContactPage = () => {
       <div className="absolute z-[0] w-[40%] h-[35%] bottom-0 right-0 blue__gradient" />
 
       <div className="w-full flex justify-center items-center my-24" id="about">
-        <Image src={art5} alt="about" width={800} style={{objectFit: "cover", }} />
+        <Image
+          src={art5}
+          alt="about"
+          width={800}
+          style={{ objectFit: "cover" }}
+          loading="lazy"
+        />
       </div>
     </div>
   );

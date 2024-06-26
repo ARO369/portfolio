@@ -2,17 +2,17 @@
 
 import React from "react";
 import { ProjectCard } from "./ProjectCard";
-import chat_thumbnail from "../../public/assets/chat_thumbnail.png";
-import crm_thumbnail from "../../public/assets/crm_thumbnail.png";
-import crmlanding_thumbnail from "../../public/assets/crmlanding_thumbnail.png";
-import financegpt_thumbnail from "../../public/assets/financegpt_thumbnail.png";
-import gdsc_thumbnail from "../../public/assets/gdsc_thumbnail.png";
-import gym_thumbnail from "../../public/assets/gym_thumbnail.png";
-import movieHub_thmbnail from "../../public/assets/movieHub_thmbnail.png";
-import portfolio_thumbnail from "../../public/assets/portfolio_thumbnail.png";
-import technews_thumbnail from "../../public/assets/technews_thumbnail.png";
-import youtube_thumbnail from "../../public/assets/youtube_thumbnail.png";
-import gpa_thumbnail from "../../public/assets/gpa_thumbnail.png";
+import chat_thumbnail from "../../public/assets/chat_thumbnail.webp";
+import crm_thumbnail from "../../public/assets/crm_thumbnail.webp";
+import crmlanding_thumbnail from "../../public/assets/crmlanding_thumbnail.webp";
+import financegpt_thumbnail from "../../public/assets/financegpt_thumbnail.webp";
+import gdsc_thumbnail from "../../public/assets/gdsc_thumbnail.webp";
+import gym_thumbnail from "../../public/assets/gym_thumbnail.webp";
+import movieHub_thmbnail from "../../public/assets/movieHub_thmbnail.webp";
+import portfolio_thumbnail from "../../public/assets/portfolio_thumbnail.webp";
+import technews_thumbnail from "../../public/assets/technews_thumbnail.webp";
+import youtube_thumbnail from "../../public/assets/youtube_thumbnail.webp";
+import gpa_thumbnail from "../../public/assets/gpa_thumbnail.webp";
 
 const projects = [
   {
@@ -116,10 +116,10 @@ const projects = [
   },
 ];
 
-const ProjectsPage = () => {
+const ProjectsPage: React.FC = () => {
   return (
-    <div className="relative">
-      <div className="text-center mt-32 dark:text-white text-neutral-800 text-[2.5rem] font-bold">
+    <div className="relative" id="projects">
+      <div className="text-center pt-32 dark:text-white text-neutral-800 text-[2.5rem] font-bold">
         🌌 Projects 🦄
       </div>
       <div className="absolute z-[0] w-[40%] h-[35%] top-0 left-0 blue__gradient" />

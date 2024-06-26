@@ -1,3 +1,5 @@
+"use client"
+
 import { GlareCard } from "./ui/glare-card";
 
 interface services {

@@ -1,10 +1,18 @@
-"use client";
-import AboutPage from "@/components/AboutPage";
-import ContactPage from "@/components/ContactPage";
+import dynamic from "next/dynamic";
+
+// Import components that use client-side features with { ssr: false }
+const AboutPage = dynamic(() => import("@/components/AboutPage"), {
+  ssr: false,
+});
+const ContactPage = dynamic(() => import("@/components/ContactPage"), {
+  ssr: false,
+});
 import { Footer } from "@/components/Footer";
 import HomePage from "@/components/HomePage";
 import { Macbook } from "@/components/Macbook";
-import ProjectsPage from "@/components/ProjectsPage";
+const ProjectsPage = dynamic(() => import("@/components/ProjectsPage"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -20,9 +28,7 @@ export default function Home() {
         <Macbook />
 
         {/* projects*/}
-        <div id="projects">
-          <ProjectsPage />
-        </div>
+        <ProjectsPage />
 
         {/* About */}
         <AboutPage />
