@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
 import React from "react";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 import { TechStackButton } from "./TechStackButton";
 import reactLogo from "../../public/assets/react.png";
 import javascriptLogo from "../../public/assets/javascript.png";
@@ -36,12 +36,10 @@ interface LazyImageProps {
   width: number;
 }
 
-
-
 const LazyImage = ({ src, alt, width }: LazyImageProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    rootMargin: '200px 0px',
+    rootMargin: "200px 0px",
   });
 
   return (
@@ -61,13 +59,22 @@ const AboutPage: React.FC = () => {
       <div className="relative min-h-screen w-full flex flex-col justify-center items-center">
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 left-0 blue__gradient" />
         <div className="absolute z-[0] w-[40%] h-[35%] bottom-0 right-0 blue__gradient" />
-        <div className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold pt-32" id="about">
+        <div
+          className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold pt-32"
+          id="about"
+        >
           🌌 About 🦄
         </div>
         <br />
         <br />
         <div className="w-[90%] sm:w-[80%] md:w-[80%] xl:w-[60%] my-14 text-2xl z-10">
-          Hello, folks! I'm a <span className="text-green-300">Full-Stack Web Developer</span> with a passion for the MERN stack. JavaScript is at the heart of my work, and I've spent the last three years diving deep into web development, creating projects I'm really proud of. Freelancing has also been a big part of my journey, giving me the chance to work with various clients and learn from each experience.
+          Hello, folks! I'm a{" "}
+          <span className="text-green-300">Full-Stack Web Developer</span> with
+          a passion for the MERN stack. JavaScript is at the heart of my work,
+          and I've spent the last three years diving deep into web development,
+          creating projects I'm really proud of. Freelancing has also been a big
+          part of my journey, giving me the chance to work with various clients
+          and learn from each experience.
           <br />
           <br />
           <br />
@@ -91,27 +98,43 @@ const AboutPage: React.FC = () => {
           <br />
           <br />
           <div>
-            <span className="sm:text-4xl text-[30px] font-bold text-green-300">✨ Aaradhya D. Pathak</span>
+            <span className="sm:text-4xl text-[30px] font-bold text-green-300">
+              ✨ Aaradhya D. Pathak
+            </span>
             <br />
-            <br /> <span className="font-bold text-purple-300">Currently:</span> Final Year Engineering Student <br />
+            <br /> <span className="font-bold text-purple-300">
+              Currently:
+            </span>{" "}
+            Final Year Engineering Student <br />
             <br />
-            <span className="font-bold text-purple-300">Branch:</span> Computer Science Engineering <br />
+            <span className="font-bold text-purple-300">Branch:</span> Computer
+            Science Engineering <br />
             <br />
-            <span className="font-bold text-purple-300">College:</span> Prof. Ram Meghe Institute of Technology and Research
-            <br />
-            <br />
-            <span className="font-bold text-purple-300">Graduation Year:</span> 2025
-            <br />
-            <br />
-            <span className="font-bold text-purple-300">Address:</span> Amravati, Maharashtra, India
-            <br />
+            <span className="font-bold text-purple-300">College:</span> Prof.
+            Ram Meghe Institute of Technology and Research
             <br />
             <br />
+            <span className="font-bold text-purple-300">
+              Graduation Year:
+            </span>{" "}
+            2025
             <br />
-            <div className="w-full flex justify-center items-center my-28" id="about">
+            <br />
+            <span className="font-bold text-purple-300">Address:</span>{" "}
+            Amravati, Maharashtra, India
+            <br />
+            <br />
+            <br />
+            <br />
+            <div
+              className="w-full flex justify-center items-center my-28"
+              id="about"
+            >
               <LazyImage src={art6} alt="about" width={1000} />
             </div>
-            <span className="font-bold text-green-300">🎗️ As a student of computer science, I specialize in:</span>
+            <span className="font-bold text-green-300">
+              🎗️ As a student of computer science, I specialize in:
+            </span>
             <br />
             <br />
             -Full Stack Web Development
@@ -119,16 +142,36 @@ const AboutPage: React.FC = () => {
             -Object Oriented Programming
             <br /> -Database Management
             <br />
-            <br /> I completed an <Link href="https://arocrmsoftware.netlify.app/" className="text-green-300 underline">Internship</Link> at Decqle Design Studio as a Frontend Developer, where I worked with React.js, Tailwind CSS, and ReactFlow. During this internship, I learned various skills such as communication and teamwork.
-            <br /> <br />I also completed a <Link href="https://aroprojects.000webhostapp.com/gymwebsite/" className="text-green-300 underline">Freelance</Link> project for a gym, creating a landing page website using HTML and CSS. The website is fully mobile responsive and includes sections for diet plans and gym schedules.
+            <br /> I completed an{" "}
+            <Link
+              href="https://arocrmsoftware.netlify.app/"
+              className="text-green-300 underline"
+            >
+              Internship
+            </Link>{" "}
+            at Decqle Design Studio as a Frontend Developer, where I worked with
+            React.js, Tailwind CSS, and ReactFlow. During this internship, I
+            learned various skills such as communication and teamwork.
+            <br /> <br />I also completed a{" "}
+            <Link
+              href="https://aroprojects.000webhostapp.com/gymwebsite/"
+              className="text-green-300 underline"
+            >
+              Freelance
+            </Link>{" "}
+            project for a gym, creating a landing page website using HTML and
+            CSS. The website is fully mobile responsive and includes sections
+            for diet plans and gym schedules.
           </div>
           <br />
           <br />
           <br />
-          🙌 So, let's connect and share a few laughs while we navigate the tech world together!
+          🙌 So, let's connect and share a few laughs while we navigate the tech
+          world together!
           <br />
           <br />
-          ➡️ I am looking for opportunities in the fields of web development and software development.
+          ➡️ I am looking for opportunities in the fields of web development and
+          software development.
           <br />
         </div>
       </div>
@@ -138,7 +181,10 @@ const AboutPage: React.FC = () => {
       </div>
 
       {/* Blogs */}
-      <div className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold pt-32" id="blogs">
+      <div
+        className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold pt-32"
+        id="blogs"
+      >
         🌌 Blogs 🦄
       </div>
       <div className="relative w-full min-h-full flex flex-wrap justify-center mb-20">
@@ -167,7 +213,10 @@ const AboutPage: React.FC = () => {
       <div className="w-full flex justify-center items-center my-2" id="about">
         <LazyImage src={art3} alt="about" width={1000} />
       </div>
-      <div className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold pt-32" id="services">
+      <div
+        className="text-center dark:text-white text-neutral-800 text-[2.5rem] font-bold pt-32"
+        id="services"
+      >
         🌌 Services 🦄
       </div>
       <div className="relative flex justify-center w-full my-8">
