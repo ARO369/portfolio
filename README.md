@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio Website
 
-## Getting Started
+This is my personal portfolio website built using Next.js, Tailwind CSS, and TypeScript. The website showcases my projects, provides information about my services, and includes a blog section where I share my thoughts on various topics.
 
-First, run the development server:
+### 🔗Live: https://aaradhyapathak.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# ✨Home: Introduction and highlights.
+![Screenshot 2024-06-28 101443](https://github.com/ARO369/portfolio/assets/106620231/3b880e68-3991-4754-8c60-3dfe1abf0d44)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# ✨Projects: Showcase of my projects with descriptions and links.
+![Screenshot 2024-06-28 101506](https://github.com/ARO369/portfolio/assets/106620231/c0e7fcb1-f05d-49c9-8406-e367c8ddd309)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+# ✨About: Information about me and my background.
+![Screenshot 2024-06-28 101615](https://github.com/ARO369/portfolio/assets/106620231/9934b1a3-25bb-4e5f-91e8-3fcf56375e64)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# ✨Blogs: My blog posts on various topics.
+![Screenshot 2024-06-28 101637](https://github.com/ARO369/portfolio/assets/106620231/7297e126-e54e-4d4e-a2d9-2f7b970a5c1b)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# ✨Services: Details about the services I offer.
+![Screenshot 2024-06-28 101700](https://github.com/ARO369/portfolio/assets/106620231/9120df03-7fc8-420e-96aa-8a38bfd6df26)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# ✨Contact: A form to get in touch with me.
+![Screenshot 2024-06-28 101718](https://github.com/ARO369/portfolio/assets/106620231/3393c4a1-72b1-4a1b-83cd-11bc50073ae3)
+
+
+
+## Installation
+
+To get a local copy up and running, follow these simple steps:
+
+1. Clone the repository
+    ```sh
+    git clone https://github.com/ARO369/portfolio.git
+    ```
+2. Navigate to the project directory
+    ```sh
+    cd portfolio
+    ```
+3. Install dependencies
+    ```sh
+    npm install
+    ```
+4. Start the development server
+    ```sh
+    npm run dev
+    ```
+
+## Usage
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+
+## Project Structure
+
+The main folders and files include:
+
+- `app/` - Contains the pages of the website.
+- `components/` - Reusable React components.
+- `data/` - Static files and assets.
+- `styles/` - Global and component-specific styles.
+- `utils` - Tailwind CSS configuration.
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
