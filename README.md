@@ -66,6 +66,8 @@ The main folders and files include:
 - `styles/` - Global and component-specific styles.
 - `utils` - Tailwind CSS configuration.
 
+The 3D spline model and title font used in this project is from wendoj
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
