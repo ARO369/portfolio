@@ -17,6 +17,9 @@ import materialuiLogo from "../../public/assets/materialui.png";
 import cppLogo from "../../public/assets/cpp.png";
 import htmlLogo from "../../public/assets/html.png";
 import cssLogo from "../../public/assets/css.png";
+import postmanLogo from "../../public/assets/postman.png";
+import gitLogo from "../../public/assets/git.png";
+import githubLogo from "../../public/assets/github.png";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import art from "../../public/assets/art.webp";
@@ -90,6 +93,9 @@ const AboutPage: React.FC = () => {
             <TechStackButton title="Next.js" logo={nextjsLogo} />
             <TechStackButton title="TypeScript" logo={typescriptLogo} />
             <TechStackButton title="Material-UI" logo={materialuiLogo} />
+            <TechStackButton title="Postman" logo={postmanLogo} />
+            <TechStackButton title="Git" logo={gitLogo} />
+            <TechStackButton title="GitHub" logo={githubLogo} />
             <TechStackButton title="C++" logo={cppLogo} />
             <TechStackButton title="HTML5" logo={htmlLogo} />
             <TechStackButton title="CSS3" logo={cssLogo} />
